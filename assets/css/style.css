@@ -329,36 +329,11 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  min-height: 200px;
 }
 
 .avatar-box {
-  position: absolute;
-  inset: 0;
-  margin: 0;
-  border-radius: 20px 20px 0 0;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.avatar-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.avatar-box::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 30%,
-    hsla(240, 2%, 12%, 0.7) 65%,
-    var(--eerie-black-2) 100%
-  );
+  background: var(--bg-gradient-onyx);
+  border-radius: 20px;
 }
 
 .info-content .name {
